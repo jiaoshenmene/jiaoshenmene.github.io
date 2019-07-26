@@ -98,20 +98,24 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="杜甲同学的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2019/03/index.html">
+  <meta name="description" content="启动Nodejs服务 node server.js nohub node server.js &amp;amp; forever start server.js  后台运行状态  音视频采集API1234567var constraints = &amp;#123;        video : true,        audio : true    &amp;#125;    navigator.mediaDevic">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WebRTC">
+<meta property="og:url" content="http://yoursite.com/WebRTC/index.html">
 <meta property="og:site_name" content="杜甲同学的博客">
+<meta property="og:description" content="启动Nodejs服务 node server.js nohub node server.js &amp;amp; forever start server.js  后台运行状态  音视频采集API1234567var constraints = &amp;#123;        video : true,        audio : true    &amp;#125;    navigator.mediaDevic">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-24T01:36:14.449Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="杜甲同学的博客">
+<meta name="twitter:title" content="WebRTC">
+<meta name="twitter:description" content="启动Nodejs服务 node server.js nohub node server.js &amp;amp; forever start server.js  后台运行状态  音视频采集API1234567var constraints = &amp;#123;        video : true,        audio : true    &amp;#125;    navigator.mediaDevic">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2019/03/">
+  <link rel="canonical" href="http://yoursite.com/WebRTC/">
 
 
 
@@ -121,7 +125,7 @@
   };
 </script>
 
-  <title>Archive | 杜甲同学的博客</title>
+  <title>WebRTC | 杜甲同学的博客</title>
   
 
 
@@ -169,7 +173,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -241,7 +245,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -292,7 +296,7 @@
         
         
           
-          <li class="menu-item menu-item-webrtc">
+          <li class="menu-item menu-item-webrtc menu-item-active">
 
     
     
@@ -372,148 +376,81 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">WebRTC
+
+</h1>
+
+<div class="post-meta">
   
   
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+
+
+
+</div>
+
+</header>
 
       
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        Um..! 7 posts in total. Keep on posting.
-      </span>
       
-
       
+      <div class="post-body">
+        
+        
+          <h1 id="启动Nodejs服务"><a href="#启动Nodejs服务" class="headerlink" title="启动Nodejs服务"></a>启动Nodejs服务</h1><ul>
+<li>node server.js</li>
+<li>nohub node server.js &amp;</li>
+<li>forever start server.js  后台运行状态</li>
+</ul>
+<h3 id="音视频采集API"><a href="#音视频采集API" class="headerlink" title="音视频采集API"></a>音视频采集API</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var constraints = &#123;</span><br><span class="line">        video : true,</span><br><span class="line">        audio : true</span><br><span class="line">    &#125;</span><br><span class="line">    navigator.mediaDevices.getUserMedia(constraints)</span><br><span class="line">        .then(gotMediaStream)</span><br><span class="line">        .catch(handleError);</span><br></pre></td></tr></table></figure>
+<p>vim :!xxd 以16进制打开</p>
+<p>启动turn服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">octurn目录下</span><br><span class="line">turnserver -c ./etc/turnserver.conf</span><br></pre></td></tr></table></figure></p>
+<p>39.97.229.105  阿里云</p>
+<p>3.15.23.192 亚马逊云</p>
+<p>chmod 400 good.pem</p>
+<p>ssh -i “good.pem” <a href="mailto:ubuntu@ec2-3-15-23-192.us-east-2.compute.amazonaws.com" target="_blank" rel="noopener">ubuntu@ec2-3-15-23-192.us-east-2.compute.amazonaws.com</a></p>
+<p>/home/dujia/RTCSpace</p>
+<p>vi 下shell 命令<br>:!ls ../https_server/</p>
+<p>su root</p>
+<p>netstat -ntpl</p>
+<p>forever start –minUptime 1000 –spinSleepTime 1000 server.js</p>
+<p>var options = {<br>    key: fs.readFileSync(‘./cert/2394334_<a href="http://www.mancangyun.com.key&#39;)" target="_blank" rel="noopener">www.mancangyun.com.key&#39;)</a>,<br>    cert: fs.readFileSync(‘./cert/2394334_<a href="http://www.mancangyun.com.pem&#39;)" target="_blank" rel="noopener">www.mancangyun.com.pem&#39;)</a>,<br>}</p>
+<p>var options = {<br>    key: fs.readFileSync(‘./cert/2_<a href="http://www.mcyyx.com.key&#39;)" target="_blank" rel="noopener">www.mcyyx.com.key&#39;)</a>,<br>    cert: fs.readFileSync(‘./cert/1_<a href="http://www.mcyyx.com_bundle.crt&#39;)" target="_blank" rel="noopener">www.mcyyx.com_bundle.crt&#39;)</a>,<br>}</p>
+<p>cli-password=qwerty</p>
 
         
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/03/26/LayoutStudy/" itemprop="url">
-            
-              <span itemprop="name">iOS面试题整理（1）</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-26T20:28:59+08:00" content="2019-03-26">
-          03-26
-        </time>
       </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/03/15/hello-world/" itemprop="url">
-            
-              <span itemprop="name">Hello World</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-15T21:30:08+08:00" content="2019-03-15">
-          03-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/03/15/ios面试题/" itemprop="url">
-            
-              <span itemprop="name">iOS面试题</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-15T09:39:27+08:00" content="2019-03-15">
-          03-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
     </div>
+    
+
+
+
+    
+    
+    
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MzM3OC8xOTkxOQ=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -533,8 +470,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -593,6 +539,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#启动Nodejs服务"><span class="nav-number">1.</span> <span class="nav-text">启动Nodejs服务</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#音视频采集API"><span class="nav-number">1.0.1.</span> <span class="nav-text">音视频采集API</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -724,6 +687,10 @@
 
 
   
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
 
   
 
@@ -739,6 +706,23 @@
 
   
 
+
+  
+    <script>
+  window.livereOptions = {
+    refer: 'WebRTC/index.html'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+  
 
 
   
